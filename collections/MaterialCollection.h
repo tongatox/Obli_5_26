@@ -10,6 +10,7 @@ using namespace std;
 class MaterialCollection
 {
 private:
+    
     map<string, Material*> materiales;
 
 public:

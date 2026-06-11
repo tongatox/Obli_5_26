@@ -1,7 +1,19 @@
 #include "UsuarioCollection.h"
 
+UsuarioCollection* UsuarioCollection::instance = nullptr;
+
 UsuarioCollection::UsuarioCollection()
 {
+}
+
+
+UsuarioCollection* UsuarioCollection::getInstance()
+{
+    if (instance == nullptr)
+    {
+        instance = new UsuarioCollection();
+    }
+    return instance;
 }
 
 Usuario* UsuarioCollection::buscarUsuario(string numid)
