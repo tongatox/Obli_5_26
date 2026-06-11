@@ -21,7 +21,7 @@ public:
     int getAnioPubli();
     ~Material();
 
-    virtual float calcularMulta(int diasAtraso) = 0;
+    virtual string getTipo() = 0;
 
 };
 
