@@ -9,11 +9,12 @@ using namespace std;
 class PrestamoCollection
 {
 private:
+    static PrestamoCollection *instance;
     map<int, Prestamo*> prestamos;
-
-public:
     PrestamoCollection();
 
+public:
+    static PrestamoCollection* getInstance();
     Prestamo* buscarPrestamo(int id);
     void agregarPrestamo(Prestamo* prestamo);
     void actualizarPrestamo(Prestamo* prestamo);

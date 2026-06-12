@@ -1,5 +1,20 @@
 #include "MaterialCollection.h"
 
+
+MaterialCollection *MaterialCollection::instance = nullptr;
+
+MaterialCollection* MaterialCollection::getInstance()
+{
+    if (instance == nullptr)
+    {
+        instance = new MaterialCollection();
+    }
+    return instance;
+}
+
+
+
+
 MaterialCollection::MaterialCollection()
 {
 }

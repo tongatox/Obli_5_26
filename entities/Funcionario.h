@@ -20,13 +20,4 @@ public:
     string getTipo();
 };
 
-
-
-
-
-
-
-
-
-
 #endif
