@@ -1,12 +1,13 @@
 #ifndef FACTORY
 #define FACTORY
 
-#include "IControladorRegistrarUsuario.h"
-#include "IControladorRegistrarMaterial.h"
-#include "IControladorRegistrarPrestamo.h"
-#include "IControladorSesion.h"
-#include "IControladorConsultarPrestamo.h"
-#include "IControladorVerMateriales.h"
+#include "../interfaces/controllers/IControladorRegistrarUsuario.h"
+#include "../interfaces/controllers/IControladorRegistrarMaterial.h"
+#include "../interfaces/controllers/IControladorRegistrarPrestamo.h"
+#include "../interfaces/controllers/IControladorVerInfoMaterial.h"
+#include "../interfaces/controllers/IControladorSesion.h"
+#include "../interfaces/controllers/IControladorConsultarPrestamo.h"
+#include "../interfaces/controllers/IControladorVerMateriales.h"
 
 class Factory
 {
@@ -15,13 +16,14 @@ private:
     Factory();
 
 public:
-    static Factory * getInstancia();
-    IControladorRegistrarUsuario * getIControladorRegistrarUsuario();
-    IControladorRegistrarMaterial* getIControladorRegistrarMaterial();
-    IControladorRegistrarPrestamo* getIControladorRegistrarPrestamo();
-    IControladorSesion* getIControladorSesion();
+    static Factory *getInstancia();
+    IControladorRegistrarUsuario *getIControladorRegistrarUsuario();
+    IControladorRegistrarMaterial *getIControladorRegistrarMaterial();
+    IControladorRegistrarPrestamo *getIControladorRegistrarPrestamo();
+    IControladorVerInfoMaterial *getIControladorVerInfoMaterial();
+    IControladorSesion *getIControladorSesion();
     IControladorConsultarPrestamo *getIControladorConsultarPrestamo();
-    IControladorVerMateriales* getIControladorVerMateriales();
+    IControladorVerMateriales *getIControladorVerMateriales();
     ~Factory();
 };
 

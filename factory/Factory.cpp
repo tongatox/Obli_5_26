@@ -1,11 +1,13 @@
 #include "Factory.h"
 
-#include "ControladorRegistrarUsuario.h"
-#include "ControladorRegistrarMaterial.h"
-#include "ControladorRegistrarPrestamo.h"
-#include "ControladorSesion.h"
-#include "ControladorConsultarPrestamo.h"
-#include "ControladorVerInfoMateriales.h"
+
+#include "../controllers/ControladorRegistrarUsuario.h"
+#include "../controllers/ControladorRegistrarMaterial.h"
+#include "../controllers/ControladorRegistrarPrestamo.h"
+#include "../controllers/ControladorVerInfoMaterial.h"
+#include "../controllers/ControladorSesion.h"
+#include "../controllers/ControladorConsultarPrestamo.h"
+#include "../controllers/ControladorVerInfoMateriales.h"
 
 Factory *Factory::instancia = NULL;
 
@@ -33,6 +35,11 @@ IControladorRegistrarMaterial *Factory::getIControladorRegistrarMaterial()
 IControladorRegistrarPrestamo *Factory::getIControladorRegistrarPrestamo()
 {
     return new ControladorRegistrarPrestamo();
+}
+
+IControladorVerInfoMaterial *Factory::getIControladorVerInfoMaterial()
+{
+    return new ControladorVerInfoMaterial();
 }
 
 IControladorSesion *Factory::getIControladorSesion()
