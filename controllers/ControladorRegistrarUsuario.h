@@ -1,10 +1,15 @@
 #ifndef CONTROLADORREGISTRARUSUARIO_H
 #define CONTROLADORREGISTRARUSUARIO_H
 
-#include "IControladorRegistrarUsuario.h"
-#include "UsuarioCollection.h"
-#include "Usuario.h"
-#include "Fecha.h"
+#include "../interfaces/controllers/IControladorRegistrarUsuario.h"
+#include "../collections/UsuarioCollection.h"
+#include "../datatypes/Fecha.h"
+#include "../entities/Usuario.h"
+#include "../entities/Lector.h"
+#include "../entities/Funcionario.h"
+#include <string>
+
+using namespace std;
 
 class ControladorRegistrarUsuario : public IControladorRegistrarUsuario
 {
@@ -16,12 +21,12 @@ private:
     int numEmp;
 
 public:
-    void registrarLector(string numId, string nombre, string contraseña, Fecha fechaRegistro);
-    void cancelarLector();
-    void confirmarLector();
-    void registrarFuncionario(string numId, string nombre, string contraseña, int numEmp);
-    void cancelarFuncionario();
-    void confirmarFuncionario();
+    void registrarLector(string numId, string nombre, string contraseña, Fecha fechaRegistro) override;
+    void cancelarLector() override;
+    void confirmarLector() override;
+    void registrarFuncionario(string numId, string nombre, string contraseña, int numEmp) override;
+    void cancelarFuncionario() override;
+    void confirmarFuncionario() override;
 };
 
 #endif

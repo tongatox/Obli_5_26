@@ -1,9 +1,8 @@
 #include "ControladorRegistrarUsuario.h"
-#include "UsuarioCollection.h"
-#include "Usuario.h"
-#include "Fecha.h"
-#include "Lector.h"
-#include "Funcionario.h"
+#include "../collections/UsuarioCollection.h"
+#include "../datatypes/Fecha.h"
+#include "../entities/Lector.h"
+#include "../entities/Funcionario.h"
 
 void ControladorRegistrarUsuario::registrarLector(string numId, string nombre, string contraseña, Fecha fechaRegistro)
 {
