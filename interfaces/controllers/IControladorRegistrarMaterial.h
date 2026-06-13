@@ -12,7 +12,7 @@ public:
     virtual void cancelarLibro() = 0;
     virtual void confirmarLibro() = 0;
 
-    virtual void registrarrevista(string codigo, string titulo, int anioPublicacion, int numEdi, bool esMensual) = 0;
+    virtual void registrarRevista(string codigo, string titulo, int anioPublicacion, int numEdi, bool esMensual) = 0;
     virtual void cancelarRevista() = 0;
     virtual void confirmarRevista() = 0;
 
