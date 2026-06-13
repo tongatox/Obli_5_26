@@ -3,7 +3,7 @@
 
 #include <map>
 #include <string>
-#include "Usuario.h"
+#include "../entities/Usuario.h"
 
 using namespace std;
 
