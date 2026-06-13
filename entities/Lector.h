@@ -6,9 +6,9 @@
 #include <string>
 using namespace std;
 
-#include "Usuario.h"
-#include "Fecha.h"
-#include "Prestamo.h"
+#include "../entities/Usuario.h"
+#include "../datatypes/Fecha.h"
+#include "../entities/Prestamo.h"
 
 class Lector : public Usuario
 {
