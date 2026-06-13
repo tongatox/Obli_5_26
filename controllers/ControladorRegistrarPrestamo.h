@@ -1,7 +1,14 @@
 #ifndef CONTROLADORREGISTRARPRESTAMO
 #define CONTROLADORREGISTRARPRESTAMO
 
-#include "IControladorRegistrarPrestamo.h"
+#include "../interfaces/controllers/IControladorRegistrarPrestamo.h"
+#include "../datatypes/Fecha.h"
+#include "../entities/Lector.h"
+#include "../entities/Prestamo.h"
+#include "../collections/UsuarioCollection.h"
+#include <string>
+using namespace std;
+
 
 class ControladorRegistrarPrestamo : public IControladorRegistrarPrestamo
 {

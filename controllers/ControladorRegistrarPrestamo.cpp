@@ -1,10 +1,10 @@
 #include "ControladorRegistrarPrestamo.h"
 
-#include "UsuarioCollection.h"
-#include "MaterialCollection.h"
-#include "PrestamoCollection.h"
-#include "Lector.h"
-#include "Prestamo.h"
+#include "../collections/UsuarioCollection.h"
+#include "../collections/MaterialCollection.h"
+#include "../collections/PrestamoCollection.h"
+#include "../entities/Lector.h"
+#include "../entities/Prestamo.h"
 
 
 void ControladorRegistrarPrestamo::registrarPrestamo(Fecha fechaPres, int diasPermi, string numId, string codigo)

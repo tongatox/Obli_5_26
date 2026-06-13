@@ -28,4 +28,4 @@ public:
     void confirmarRevista() override;
 };
 
-#endif // CONTROLADORREGISTRARMATERIAL_H
+#endif
