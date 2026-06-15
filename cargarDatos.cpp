@@ -57,7 +57,7 @@ void cargarDatos()
     mc->agregarMaterial(r3);
 
     // -------------------------------------------------------------------------
-    // Carga de datos para algunos prestamos
+    // Carga de datos para prestamos
     // -------------------------------------------------------------------------
     PrestamoCollection* pc = PrestamoCollection::getInstance();
 

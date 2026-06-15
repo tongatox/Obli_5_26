@@ -2,7 +2,7 @@
 
 #include "../collections/UsuarioCollection.h"
 #include "../entities/Usuario.h"
-#include "Sesion.h"
+#include "../entities/Sesion.h"
 
 bool ControladorSesion::ingresarDatos(string numId, string contraseña)
 {

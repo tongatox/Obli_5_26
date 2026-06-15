@@ -20,9 +20,9 @@ public:
     Lector(string numid, string nombre, string contraseña, Fecha fechRegistro);
     Fecha getFechRegistro();
     void setFechRegistro(Fecha fechRegistro);
-    ~Lector() override;
+    ~Lector();
 
-    string getTipo() override;
+    string getTipo();
 
     Prestamo ** getPrestamo();
     void agregarPrestamo(Prestamo *prestamo);

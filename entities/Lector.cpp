@@ -27,12 +27,9 @@ string Lector::getTipo()
 Prestamo **Lector::getPrestamo()
 {
     Prestamo **ps = new Prestamo *[MAX_PRESTAMO];
-    for (int i = 0; i < MAX_PRESTAMO; i++)
+    for (int i = 0; i < this->topePres; i++)
     {
-        if (i < this->topePres)
-            ps[i] = this->p[i];
-        else
-            ps[i] = nullptr;
+        ps[i] = this->p[i];
     }
     return ps;
 }

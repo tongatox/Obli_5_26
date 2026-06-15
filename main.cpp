@@ -4,6 +4,6 @@
 int main()
 {
     cargarDatos();
-    menuPrincipal();
+    menuAutenticacion();
     return 0;
 }
