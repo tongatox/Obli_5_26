@@ -16,6 +16,7 @@ private:
 
 public:
     static MaterialCollection *getInstance();
+    map<string, Material*> listar();
     Material *buscarMaterial(string codigo);
     void agregarMaterial(Material *material);
     void actualizarMaterial(Material *material);

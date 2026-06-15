@@ -12,11 +12,13 @@ MaterialCollection* MaterialCollection::getInstance()
     return instance;
 }
 
-
-
-
 MaterialCollection::MaterialCollection()
 {
+}
+
+map<string, Material*> MaterialCollection::listar()
+{
+    return this->materiales;
 }
 
 Material* MaterialCollection::buscarMaterial(string codigo)
@@ -67,3 +69,4 @@ MaterialCollection::~MaterialCollection()
     }
     this->materiales.clear();
 }
+

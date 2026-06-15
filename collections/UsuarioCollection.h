@@ -16,6 +16,7 @@ private:
 
 public:
     static UsuarioCollection *getInstance();
+    map<string, Usuario*> listar();
     Usuario *buscarUsuario(string numid);
     void agregarUsuario(Usuario *usuario);
     void actualizarUsuario(Usuario *usuario);

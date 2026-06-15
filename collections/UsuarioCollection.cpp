@@ -16,6 +16,11 @@ UsuarioCollection* UsuarioCollection::getInstance()
     return instance;
 }
 
+map<string, Usuario*> UsuarioCollection::listar()
+{
+    return this->usuarios;
+}
+
 Usuario* UsuarioCollection::buscarUsuario(string numid)
 {
     map<string, Usuario*>::iterator it = this->usuarios.find(numid);
