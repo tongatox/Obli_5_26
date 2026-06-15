@@ -3,7 +3,8 @@
 
 map<string, Material*> ControladorVerInfoMaterial::consultarListaMaterial()
 {
-    
+    MaterialCollection* mc = MaterialCollection::getInstance();
+    return mc->listar();
 }
 
 Material* ControladorVerInfoMaterial::seleccionarMaterial(string codigo)
