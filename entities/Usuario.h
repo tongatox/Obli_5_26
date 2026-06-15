@@ -18,7 +18,7 @@ public:
     void setNumid(string numid);
     void setNombre(string nombre);
     void setContraseña(string contraseña);
-    ~Usuario();
+    virtual ~Usuario();
 
     bool validarContraseña(string contraseña);
     virtual string getTipo() = 0;

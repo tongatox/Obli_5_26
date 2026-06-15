@@ -14,7 +14,7 @@ Sesion* Sesion::getInstance()
 
 Sesion::Sesion()
 {
-    this->sesion = NULL;
+    this->sesion = false;
 }
 
 bool Sesion::getSesion()

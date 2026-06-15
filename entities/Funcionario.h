@@ -15,9 +15,9 @@ public:
     Funcionario(string numId, string nombre, string contraseña, int numEmp);
     int getNumEmp();
     void setNumEmp(int numEmp);
-    ~Funcionario();
+    ~Funcionario() override;
 
-    string getTipo();
+    string getTipo() override;
 };
 
 #endif
